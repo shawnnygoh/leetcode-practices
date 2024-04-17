@@ -2,6 +2,8 @@
 
 **Difficulty: Easy**
 
+**Data Structures: Hash Map**
+
 Given two strings `s` and `t`, _determine if they are isomorphic_.
 
 Two strings `s` and `t` are isomorphic if the characters in `s` can be replaced to get `t`.
