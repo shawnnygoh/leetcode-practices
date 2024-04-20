@@ -1,4 +1,4 @@
-# 26. Remove Duplicates from Sorted Array
+# 58. Length of Last Word
 
 **Difficulty: Easy**
 
