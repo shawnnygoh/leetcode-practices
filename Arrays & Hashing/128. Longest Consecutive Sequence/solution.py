@@ -1,0 +1,24 @@
+from typing import List
+
+class Solution:
+    """
+    Approach: Hash Set
+    Intuition: Convert array to set and only start counting a sequence if the current number 'n' is the beginning of a sequence.
+    Time Complexity: O(N)
+    """
+    def longestConsecutive(self, nums: List[int]) -> int:
+        num_set = set(nums)
+        L = 0
+
+        for n in num_set:
+            if n - 1 not in num_set:
+                curr_n = n
+                curr_len = 1
+            
+                while curr_n + 1 in num_set:
+                    curr_n += 1
+                    curr_len += 1
+            
+                L = max(L, curr_len)
+        
+        return L
